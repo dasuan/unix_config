@@ -6,11 +6,11 @@
 # umask 022
 
 # You may uncomment the following lines if you want `ls' to be colorized:
-# export LS_OPTIONS='--color=auto'
-# eval "`dircolors`"
-# alias ls='ls $LS_OPTIONS'
-# alias ll='ls $LS_OPTIONS -l'
-# alias l='ls $LS_OPTIONS -lA'
+ export LS_OPTIONS='--color=auto'
+ eval "`dircolors`"
+ alias ls='ls $LS_OPTIONS'
+ alias ll='ls $LS_OPTIONS -l'
+ alias l='ls $LS_OPTIONS -lA'
 #
 # Some more alias to avoid making mistakes:
 alias rm='rm -i'
@@ -20,3 +20,5 @@ alias ll='ls -lh'
 alias la='ls -a'
 alias du='du -h'
 alias df='df -h'
+
+LS_COLORS=$LS_COLORS:'di=0;35:' ; export LS_COLORS
