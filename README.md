@@ -1,5 +1,9 @@
-This is config enviroment files when dasuan first initial a new toy.
+#unix_config
+This repo includes some config enviroment files.
+I use it when first initial a new toy.
 
+#Contact
 If you you have advice, tell me.
 
-github.com/dasuan
+github.com/kyshel
+kyshel.com
