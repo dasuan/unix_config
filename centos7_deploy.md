@@ -1,7 +1,7 @@
 # CentOS7 Deploy 
 
 ## Basic
-    yum install -y net-tools zip unzip vim elinks tree
+    yum install -y net-tools zip unzip vim elinks tree wget
 
 ## SSH key
 	mkdir ~/.ssh && touch ~/.ssh/authorized_keys  && vim ~/.ssh/authorized_keys
@@ -22,6 +22,11 @@
 	service httpd start && service mariadb start
 
 	firewall-cmd --permanent --zone=public --add-service=http && firewall-cmd --reload
+	
+## Phpmyadmin
+	rpm -Uvh http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-8.noarch.rpm
+	yum install phpmyadmin
+	
 
 ## Samba
 	yum install samba
