@@ -12,5 +12,8 @@ wordpress
 
 	sudo a2enmod rewrite
 
+# Uninstall apache2
+	apt-get --purge remove apache2
+
 # Reference
 - https://www.raspberrypi.org/learning/lamp-web-server-with-wordpress/worksheet/
