@@ -4,7 +4,7 @@
     yum install -y net-tools zip unzip vim elinks tree
 
 ## SSH key
-	mkdir ~/.ssh && touch ~/.ssh/authorized_keys
+	mkdir ~/.ssh && touch ~/.ssh/authorized_keys  && vim ~/.ssh/authorized_keys
 
 ## Sync Time
 	yum install ntp -y
