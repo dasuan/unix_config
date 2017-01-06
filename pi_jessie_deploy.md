@@ -16,4 +16,4 @@ wordpress
 	apt-get --purge remove apache2
 
 ## er 2 php_error
-	 echo -e '#!/bin/bash \n tail -f /var/log/apache2/error_log' > /usr/local/bin/er && chmod u+x /usr/local/bin/er
+	 echo -e '#!/bin/bash \n tail -f /var/log/apache2/error.log' > /usr/local/bin/er && chmod u+x /usr/local/bin/er
