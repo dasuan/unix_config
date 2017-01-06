@@ -70,6 +70,10 @@ GemFile `gem "json", "2.0.2"`
 	gem install ffi --platform=ruby
 
 	bundle exec jekyll serve  --host=0.0.0.0
+	
+# er 2 php_error
+mkdir ~/bin && touch ~/bin/er && echo -e '#!/bin/bash \n tail -f /var/log/httpd/error_log' > er && chmod u+x ~/bin/er
+
 
 # ETC..
 	firewall-cmd --list-all
