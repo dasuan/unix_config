@@ -21,19 +21,17 @@
 
 <script type="text/javascript">
 
-var file=getParameterByName('file');
-if(file){
-	readTextFile(file);
+	var file=getParameterByName('file');
+	var nav_a = document.getElementById('nav_a');
+	var nav_b = document.getElementById('nav_b');
 	
-var nav_a = document.getElementById('nav_a');
-nav_a.innerHTML = '<a href="." style="float:left;"><h4> <-Back to Home </h4></a><a href="http://kyshel.me" style="float:right;"><h4> Kyshel </h4></a><hr>';
-var nav_b = document.getElementById('nav_b');
-nav_b.innerHTML = '<hr><a href="." style="float:left;"><h4> <-Back to Home </h4></a><a href="http://kyshel.me" style="float:right;"><h4> Kyshel </h4></a>';
-
-	
-}else{
-	readTextFile("README.md");
-}
+	if(file){
+		readTextFile(file);
+		nav_a.innerHTML = '<a href="." style="float:left;"><h4> <-Back to Home </h4></a><a href="http://kyshel.me" style="float:right;"><h4> Kyshel </h4></a><hr>';
+		nav_b.innerHTML = '<hr><a href="." style="float:left;"><h4> <-Back to Home </h4></a><a href="http://kyshel.me" style="float:right;"><h4> Kyshel </h4></a>';
+	}else{
+		readTextFile("README.md");
+	}
 	
 
 	
