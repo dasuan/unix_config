@@ -13,7 +13,10 @@
 </head>
 <body>
 	
-<div id="show" class="markdown-body">
+<div id="show">
+	<div id="nav_a"></div>
+	<div class="markdown-body"></div>
+	<div id="nav_b"></div>
 </div>
 
 <script type="text/javascript">
@@ -21,13 +24,12 @@
 var file=getParameterByName('file');
 if(file){
 	readTextFile(file);
-	var div = document.getElementById('show');
+	
+var nav_a = document.getElementById('nav_a');
+nav_a.innerHTML = '<a href="." style="float:left;"><h4> <-Back to Home </h4></a><a href="http://kyshel.me" style="float:right;"><h4> Kyshel </h4></a><hr>';
+var nav_b = document.getElementById('nav_b');
+nav_b.innerHTML = '<hr><a href="." style="float:left;"><h4> <-Back to Home </h4></a><a href="http://kyshel.me" style="float:right;"><h4> Kyshel </h4></a>';
 
-div.innerHTML = 
-	'<a href="." style="float:left;"><h4> <-Back to Home </h4></a><a href="http://kyshel.me" style="float:right;"><h4> Kyshel </h4></a><hr>' +
-	div.innerHTML +
-	'<hr><a href="." style="float:left;"><h4> <-Back to Home </h4></a>' +
-	'<a href="http://kyshel.me" style="float:right;"><h4> Kyshel </h4></a>';
 	
 }else{
 	readTextFile("README.md");
