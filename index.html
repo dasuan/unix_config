@@ -15,7 +15,6 @@
 	
 <div id="wrap"  class="markdown-body">
 	<div id="nav_a"></div>
-	<div style="clear:both;"></div>
 	<div id="show"></div>
 	<div id="nav_b"></div>
 </div>
@@ -28,7 +27,7 @@
 	
 	if(file){
 		readTextFile(file);
-		nav_a.innerHTML = '<a href="." style="float:left;"><h4> <-Back to Home </h4></a><a href="http://kyshel.me" style="float:right;"><h4> Kyshel </h4></a><hr>';
+		nav_a.innerHTML = '<a href="." style="float:left;"><h4> <-Back to Home </h4></a><a href="http://kyshel.me" style="float:right;"><h4> Kyshel </h4></a><div style="clear:both;"></div><hr>';
 		nav_b.innerHTML = '<hr><a href="." style="float:left;"><h4> <-Back to Home </h4></a><a href="http://kyshel.me" style="float:right;"><h4> Kyshel </h4></a>';
 	}else{
 		readTextFile("README.md");
