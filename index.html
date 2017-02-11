@@ -27,7 +27,11 @@ if(file){
 	
 var div = document.getElementById('show');
 
-div.innerHTML = div.innerHTML + '<hr><h4> <-Back to Home <h4>';
+div.innerHTML = 
+	'<a href="."><h4> <-Back to Home <h4></a><hr>' +
+	div.innerHTML +
+	'<hr><a href="."><h4> <-Back to Home <h4></a>' +
+	'<a href="http://kyshel.me" style="float:left;"><h4> Kyshel <h4></a>';
 	
 	
 
