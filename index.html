@@ -15,10 +15,8 @@
     			padding: 30px 60px;
 		}
 		#about{
-			width: 700px;
-			margin: 40px auto;
-			background: #ffffff;
-    			padding: 30px 60px;
+			width: 820px;
+			margin: -40px auto;
 		}
 	</style>
 </head>
@@ -39,6 +37,8 @@
 	var about = document.getElementById('about');
 	var nav_a = document.getElementById('nav_a');
 	var nav_b = document.getElementById('nav_b');
+	var parts = window.location.href.split();
+	var lastSegment = parts.pop() || parts.pop(); 
 	
 	if(file){
 		readTextFile(file);
@@ -46,7 +46,9 @@
 		nav_b.innerHTML = '<a href="." style="float:left;"><h4> <-Back to Home </h4></a><a href="http://kyshel.me" style="float:right;"><h4> Kyshel </h4></a>';
 	}else{
 		readTextFile("README.md");
-		about.innerHTML = '<a href="https://github.com/kyshel" style="float:left;"><h4>Github.com/kyshel</h4></a><a href="http://github.com/kyshel/'+ '' +'" style="float:right;"><h4>kyshel.me</h4></a><div style="clear:both;"></div>';
+		
+		about.innerHTML = '<a href="http://github.com/kyshel/'+ lastSegment +'" style="float:left;"><h4>Repo/kyshel</h4></a>';
+		about.innerHTML += '<a href="https://github.com/kyshel" style="float:right;"><h4>GitHub</h4></a><div style="clear:both;"></div>';
 	}
 	
 
