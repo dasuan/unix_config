@@ -5,21 +5,20 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.4.3/showdown.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.4.0/github-markdown.min.css">
 	<style type="text/css">
+		body{
+			background: #f5f5f5;
+		}
 		#wrap{
 			width: 700px;
 			margin: 40px auto;
-		}
-		#nav{
-			position: absolute;
-    			top: 0;
-   			right: 100%;
+			background: #ffffff;
+    			padding: 30px 60px;
 		}
 	</style>
 </head>
 <body>
 	
 <div id="wrap"  class="markdown-body">
-	<div id="nav"></div>
 	<div id="nav_a"></div>
 	<div id="show"></div>
 	<div id="nav_b"></div>
@@ -38,7 +37,7 @@
 		nav_b.innerHTML = '<a href="." style="float:left;"><h4> <-Back to Home </h4></a><a href="http://kyshel.me" style="float:right;"><h4> Kyshel </h4></a>';
 	}else{
 		readTextFile("README.md");
-		nav_a.innerHTML = '<a href="https://github.com/kyshel" style="float:left;"><h4>Github.com/kyshel</h4></a><a href="http://github.com/kyshel/'+ '' +'" style="float:right;"><h4>The Repo</h4></a><div style="clear:both;"></div>';
+		nav_a.innerHTML = '<a href="https://github.com/kyshel" style="float:left;"><h4>Github.com/kyshel</h4></a><a href="http://github.com/kyshel/'+ '' +'" style="float:right;"><h4>kyshel.me</h4></a><div style="clear:both;"></div>';
 	}
 	
 
