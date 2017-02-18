@@ -18,6 +18,9 @@
 			width: 820px;
 			margin: -40px auto;
 		}
+		.about_link{
+			margin-left:15px;
+		}
 	</style>
 </head>
 <body>
@@ -37,7 +40,7 @@
 	var about = document.getElementById('about');
 	var nav_a = document.getElementById('nav_a');
 	var nav_b = document.getElementById('nav_b');
-	var parts = window.location.href.split();
+	var parts = window.location.href.split('/');
 	var lastSegment = parts.pop() || parts.pop(); 
 	
 	if(file){
@@ -47,8 +50,9 @@
 	}else{
 		readTextFile("README.md");
 		
-		about.innerHTML = '<a href="http://github.com/kyshel/'+ lastSegment +'" style="float:left;"><h4>Repo/kyshel</h4></a>';
-		about.innerHTML += '<a href="https://github.com/kyshel" style="float:right;"><h4>GitHub</h4></a><div style="clear:both;"></div>';
+		about.innerHTML = '<a href="http://github.com/kyshel/'+ lastSegment +'" style="float:left;"><h4>This Repo</h4></a>';
+		about.innerHTML += '<a href="https://kyshel.me" class="about_link" style="float:right;"><h4>Blog</h4>';
+		about.innerHTML += '<a href="https://github.com/kyshel" class="about_link" style="float:right;"><h4>GitHub</h4></a><div style="clear:both;"></div>';
 	}
 	
 
