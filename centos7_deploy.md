@@ -35,7 +35,7 @@ smb.conf
 
 	        security = user
 	        passdb backend = tdbsam
-	        map to guest = bad user
+	        # map to guest = bad user
 	[w_html]
 	        path = /var/www/html
 	        browsable =yes
@@ -48,6 +48,7 @@ smb.conf
 ---
 	chkconfig smb on
 	service smb start
+	smbpasswd -a root
 
 
 	firewall-cmd --permanent --zone=public --add-service=samba && firewall-cmd --reload
