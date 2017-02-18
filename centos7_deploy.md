@@ -50,8 +50,7 @@ smb.conf
 	service smb start
 
 
-	firewall-cmd --permanent --zone=public --add-service=samba
-	firewall-cmd --reload
+	firewall-cmd --permanent --zone=public --add-service=samba && firewall-cmd --reload
 
 
 ## LAMP + Samba config
