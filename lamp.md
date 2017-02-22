@@ -11,3 +11,16 @@
     shell> mysqladmin create db1
     shell> mysql db1 < dump.sql
     
+    
+# Apache Virtual hosts
+``` 
+<VirtualHost *:80>
+    ServerAdmin admin@example.com
+    ServerName example.com
+    ServerAlias www.example.com
+    DocumentRoot /var/www/example.com/public_html
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+
+```
