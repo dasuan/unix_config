@@ -72,10 +72,17 @@ GemFile `gem "json", "2.0.2"`
 
 	bundle exec jekyll serve  --host=0.0.0.0
 	
-# er 2 php_error
+## er 2 php_error
 	mkdir ~/bin && echo -e '#!/bin/bash \n tail -f /var/log/httpd/error_log' > ~/bin/er && chmod u+x ~/bin/er
+	
+## Docker
+yum install -y yum-utils 
+yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+yum makecache fast
+yum -y install docker-ce
+systemctl start docker
+docker run hello-world
 
-
-# ETC..
+## ETC..
 	firewall-cmd --list-all
 	yum install tkinter
