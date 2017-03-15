@@ -1,7 +1,7 @@
 # CentOS7 Deploy 
 
 ## Basic
-    yum install -y net-tools zip unzip vim elinks tree wget
+    yum install net-tools zip unzip vim elinks tree wget -y
 
 ## SSH key
 	mkdir ~/.ssh && touch ~/.ssh/authorized_keys  && vim ~/.ssh/authorized_keys
