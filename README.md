@@ -5,3 +5,4 @@
 - [lamp.md](http://kyshel.me/config/?file=lamp.md)
 
 - [deploy_ubuntu.md](http://kyshel.me/config/?file=deploy_ubuntu.md)
+- [faq.md](http://kyshel.me/config/?file=faq.md)
